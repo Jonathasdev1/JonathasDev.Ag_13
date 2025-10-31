@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes, Games & Música</title>
+
+  <!-- Fonte moderna e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ======== RESET BÁSICO ======== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #e5e5e5;
+      background: #0f0f0f;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ======== CABEÇALHO ======== */
+    header {
+      background: rgba(20, 20, 20, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #4CAF50;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 0.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #4CAF50;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #4CAF50;
+    }
+
+    /* ======== HERO (imagem principal) ======== */
+    .hero {
+      position: relative;
+      height: 60vh;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url('img/banner.jpg') center/cover no-repeat;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+      color: #4CAF50;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    /* ======== SEÇÃO PRINCIPAL ======== */
+    main {
+      flex: 1;
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    main h2 {
+      color: #4CAF50;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    /* ======== RODAPÉ ======== */
+    footer {
+      background: #111;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #222;
+    }
+
+    /* ======== RESPONSIVIDADE ======== */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .hero-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+
+<style>
+/* Header flex — logo no canto superior esquerdo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: #0f1724;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* bloco da marca (logo + título) fica à esquerda */
+.header .brand {
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* tamanho do logo — ajuste conforme precisar */
+.header .brand img {
+  width: 56px;     /* altere para 40/48/64 conforme quiser */
+  height: auto;
+  display:block;
+}
+
+/* título (opcional) */
+.header .brand h1 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: .6px;
+}
+
+/* navegação à direita */
+.header nav ul {
+  list-style:none;
+  display:flex;
+  gap:1rem;
+  margin:0;
+  padding:0;
+}
+.header nav a { color: #e6eef6; text-decoration:none; padding:0.35rem 0.6rem; }
+
+/* mobile: empilha e esconde texto se quiser */
+@media (max-width: 640px) {
+  .header { padding: 0.5rem; }
+  .header .brand h1 { display:none; } /* mostra só o logo em telas pequenas */
+  .header nav ul { display:none; }     /* ou transforme em menu hamburguer */
+}
+</style>
+
+
+
+
+<body>
+<header class="header">
+  <a class="brand" href="index.html" aria-label="Início do site">
+    <img src="img/logo.jpeg" alt="Logo do site">
+    <h1>JTech Entertainment | Filmes, Games e Música</h1>
+  </a>
+
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="Musica.html">Musica</a></li>
+      <li><a href="Games.html">Games</a></li>
+      <li><a href="Filmes.html">Filmes</a></li>
+    </ul>
+  </nav>
+</header>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Explore o universo do entretenimento</h2>
+      <p>Games, filmes e música em um só lugar — tudo o que inspira criatividade e emoção.</p>
+    </div>
+  </section>
+
+  <main>
+    <h2>Sobre o Site</h2>
+    <p>Este site foi criado para reunir o que mais me inspira: tecnologia, cultura pop e criatividade.  
+      Em cada seção você encontrará conteúdo envolvente, com imagens e curiosidades sobre o que move nossa geração digital.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por JonathasDev1@gmail.com</p>
+  </footer>
+</body>
+</html>

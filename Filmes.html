@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Família</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+        header {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            padding: 1rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2rem;
+            margin: 0;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            font-weight: 600;
+            border-bottom: 2px solid #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            font-weight: 500;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #4CAF50;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+                padding: 0.75rem 2rem;
+                background: rgba(76, 175, 80, 0.1);
+                border-radius: 4px;
+                width: 200px;
+            }
+
+            nav a:hover {
+                background: rgba(76, 175, 80, 0.2);
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+<body>
+    <header>
+        <h1>Filmes</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Música.html">Musica</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1° Destaque da semana</h2>
+           
+             <section style="height:70vh; min-height:250px; overflow:hidden;">
+            <img src="img/Lancamento1.jpeg"
+                alt="Foto 1"
+                style="display:block; width:100%; height:100%; object-fit:cover;">
+            </section>
+
+            <p class="comentario"><strong>Enterre Seus Mortos:</strong> O maior 
+                destaque da semana é o terror nacional Enterre Seus Mortos, 
+                estrelado por Selton Mello e que conta a história de um removedor
+                 de animais mortos, então morte é algo que faz parte desse longa. 
+                 Outro destaque é o documentário Springsteen: Salve-me do
+                  Desconhecido que conta a história da criação de seu álbum de 
+                  1982 "Nebraska".</p>
+        </section>
+
+
+        <section>
+            <h2>2° Destaque da semana</h2>
+           
+             <section style="height:70vh; min-height:250px; overflow:hidden;">
+            <img src="img/Filme2.jpeg"
+                alt="Foto 1"
+                style="display:block; width:100%; height:100%; object-fit:cover;">
+            </section>
+
+            <p class="comentario"><strong>Elements:</strong> 
+                “Elementos é uma animação encantadora da Pixar que combina emoção, 
+                humor e uma bela mensagem sobre convivência e aceitação. A história
+                 se passa em uma cidade onde fogo, água, ar e terra vivem juntos,
+                  mas nem sempre em harmonia — até que duas naturezas opostas, Ember
+                   (fogo) e Wade (água), se conhecem e provam que as diferenças 
+                   podem unir, não separar.
+
+                Visualmente deslumbrante e cheio de cores vibrantes, o filme mostra de 
+                forma criativa temas como diversidade cultural, empatia e o poder de 
+                se abrir para o novo. É uma obra leve, emocionante e inspiradora — digna 
+                de ser chamada de um bom filme para todas as idades.”</p>
+                
+        </section>
+
+        <section>
+            <h2>3° Destaque da semana</h2>
+           
+             <section style="height:70vh; min-height:250px; overflow:hidden;">
+            <img src="img/Filme3.jeg.png"
+                alt="Foto 1"
+                style="display:block; width:100%; height:100%; object-fit:cover;">
+            </section>
+
+            <p class="comentario"><strong>Projeto Gemini:</strong> Projeto Gemini é
+                 um thriller de ação e ficção científica estrelado por Will Smith que
+                  impressiona tanto pela tecnologia quanto pela intensidade da trama.
+                   A história acompanha Henry Brogan, um assassino de elite que se vê 
+                   perseguido por um misterioso jovem que parece prever todos os seus
+                    movimentos — até descobrir que está enfrentando uma versão mais jovem
+                     de si mesmo, criada por clonagem.
+
+                O filme mistura ação de alta qualidade com reflexões sobre identidade, envelhecimento 
+                e ética científica. As cenas em 3D e os efeitos digitais são de altíssimo nível, 
+                especialmente nas sequências de luta entre o Will Smith atual e o seu clone digital. 
+                Mesmo com uma narrativa simples, Projeto Gemini entrega entretenimento, emoção e visuais 
+                impressionantes, sendo uma ótima pedida para quem curte ficção futurista com adrenalina.”.</p>
+        </section>
+
+        <section>
+            <h2>4° Destaque da semana</h2>
+           
+             <section style="height:70vh; min-height:250px; overflow:hidden;">
+            <img src="img/Serie1.jpeg"
+                alt="Foto 1"
+                style="display:block; width:100%; height:100%; object-fit:cover;">
+            </section>
+
+            <p class="comentario"><strong>Vikings:</strong> Vikings é 
+                uma das séries mais marcantes dos últimos tempos, combinando história,
+                 ação e drama em uma narrativa poderosa e visualmente impressionante. 
+                 Inspirada nas lendas nórdicas, a trama acompanha a jornada de Ragnar 
+                 Lothbrok — um fazendeiro ambicioso que desafia o destino para se tornar
+                  um dos maiores guerreiros e exploradores da Escandinávia.
+
+                A produção se destaca pelos figurinos detalhados, batalhas épicas e 
+                pela forma como retrata temas como fé, lealdade, poder e sacrifício. 
+                Cada episódio mergulha o espectador em um mundo brutal, mas fascinante,
+                 onde tradição e ambição se chocam.
+
+                Com atuações intensas e uma fotografia impecável, Vikings é uma série 
+                digna de maratona — perfeita para quem gosta de histórias fortes, 
+                emocionantes e cheias de propósito..</p>
+        </section>
+
+        <section>
+            <h2>5° Destaque da semana</h2>
+           
+             <section style="height:80vh; min-height:250px; overflow:hidden;">
+            <img src="img/Serie2.jepg.jpg"
+                alt="Foto 1"
+                style="display:block; width:100%; height:100%; object-fit:cover;">
+            </section>
+
+            <p class="comentario"><strong>The Walking Dead:</strong> The Walking 
+                Dead é uma série que redefiniu o gênero de sobrevivência, misturando
+                 drama humano intenso com o caos de um mundo pós-apocalíptico dominado 
+                 por zumbis. A trama acompanha Rick Grimes e um grupo de sobreviventes 
+                 lutando não apenas contra os mortos, mas também contra os vivos — 
+                 mostrando que, em tempos extremos, a maior ameaça pode vir da própria 
+                 humanidade.
+
+                Mais do que uma história sobre zumbis, The Walking Dead explora temas
+                 profundos como esperança, moralidade, liderança e o valor da vida em 
+                 meio à perda. Com atuações marcantes, roteiro envolvente e momentos 
+                 emocionantes, a série prende do início ao fim.
+
+                Mesmo após várias temporadas, continua sendo uma produção digna de
+                 maratona, que desafia o espectador a refletir sobre o que realmente
+                  significa ser humano.</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por JonathasDev1@gmail.com</p>
+    </footer>
+</body>
+</html>
